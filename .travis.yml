@@ -5,4 +5,4 @@ install:
  - pip install pygithub
 # command to run tests
 script:
- - python -m unittest GitHubApi567
+ - python -m unittest GitHubApi
