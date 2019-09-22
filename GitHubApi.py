@@ -22,8 +22,8 @@ def getRepositories(user_id):
             
     
 class Test(unittest.TestCase):
-
-
+    g = Github("f26a21eb3a5288199012753649a52a9b5bed8bc9")
+    
     def testInvalid(self):
         self.assertIs(getRepositories('j24 12'), 'invalid', 'User ID with spaces is invalid')
         self.assertIs(getRepositories(''), 'invalid', 'Empty User ID is invalid')
